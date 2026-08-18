@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  
+  --color-brand-blue: #09122C; /* Majestic Midnight Navy */
+  --color-brand-teal: #10B981; /* Brilliant Emerald Green */
+  --color-brand-gold: #F59E0B; /* Vivid Sunset Gold */
+  --color-brand-amber: #FBBF24; /* Luminous Amber */
+  --color-whatsapp: #25d366;   /* Official WhatsApp green */
+}
+
+/* Custom CSS Scrollbar and styling utilities */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+  }
+  
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-100;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-400/40 rounded hover:bg-slate-400/60 transition-colors;
+  }
+}
+
+/* Dense Layout utilities */
+.dense-grid-border {
+  @apply bg-slate-200 gap-px;
+}
+
+.dense-panel {
+  @apply bg-white p-5 border border-slate-200/80 shadow-sm rounded-lg hover:border-brand-teal transition-colors;
+}
+
+.dense-stripe-blue {
+  @apply bg-blue-50/70 border-l-4 border-brand-blue p-4 rounded-r-lg;
+}
+
+.dense-stripe-amber {
+  @apply bg-amber-50/70 border-l-4 border-brand-gold p-4 rounded-r-lg;
+}
+
+.dense-stripe-slate {
+  @apply bg-slate-50 border-l-4 border-slate-300 p-4 rounded-r-lg;
+}
+
+.glass-panel {
+  @apply bg-white/90 backdrop-blur-md border border-slate-100 shadow-sm;
+}
+
+.glow-teal:hover {
+  box-shadow: 0 0 15px rgba(29, 78, 216, 0.12);
+}
+
+.glow-gold:hover {
+  box-shadow: 0 0 15px rgba(245, 158, 11, 0.12);
+}

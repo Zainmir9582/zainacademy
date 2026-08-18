@@ -1,0 +1,6 @@
+{
+  "name": "Zain Academy",
+  "description": "A fully static, high-performance educational institute website with 7 distinct pages, Registrar's Ledger design theme, faculty index cards, and corkboard announcements.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
