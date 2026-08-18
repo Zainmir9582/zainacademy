@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <radialGradient id="sealGrad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#19544D"/>
+      <stop offset="70%" stop-color="#0E3B36"/>
+      <stop offset="100%" stop-color="#07221F"/>
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3D59B"/>
+      <stop offset="50%" stop-color="#D4A359"/>
+      <stop offset="100%" stop-color="#9A6B22"/>
+    </linearGradient>
+  </defs>
+  <!-- Background circular academic seal -->
+  <circle cx="32" cy="32" r="30" fill="url(#sealGrad)"/>
+  <circle cx="32" cy="32" r="27.5" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-dasharray="2 1"/>
+  <circle cx="32" cy="32" r="25" fill="none" stroke="url(#goldGrad)" stroke-width="0.75"/>
+  
+  <!-- Graduation Cap -->
+  <path d="M 32,18 L 52,25 L 32,31 L 12,25 Z" fill="url(#goldGrad)" stroke="#6A4914" stroke-width="0.75"/>
+  <path d="M 21,28 Q 32,33 43,28 L 43,32 Q 32,37 21,32 Z" fill="url(#goldGrad)"/>
+  <ellipse cx="32" cy="24.5" rx="1.5" ry="1" fill="#FFF"/>
+  <path d="M 32,24.5 C 40,25 46,26 47,33" fill="none" stroke="url(#goldGrad)" stroke-width="1"/>
+  <rect x="46" y="33" width="2" height="4" fill="url(#goldGrad)"/>
+  
+  <!-- Sub-label ZA -->
+  <text x="32" y="47" font-family="'Cinzel', 'Playfair Display', serif" font-size="11" font-weight="900" text-anchor="middle" fill="#FFFFFF" letter-spacing="1">ZA</text>
+  <text x="32" y="54" font-family="monospace" font-size="5" font-weight="700" text-anchor="middle" fill="#D4A359" letter-spacing="1">2010</text>
+</svg>

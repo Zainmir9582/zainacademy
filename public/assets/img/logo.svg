@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldCapGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3D59B"/>
+      <stop offset="45%" stop-color="#D4A359"/>
+      <stop offset="100%" stop-color="#9A6B22"/>
+    </linearGradient>
+    <filter id="capGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <g id="cap-icon" filter="url(#capGlow)">
+    <!-- Mortarboard Top (Rhombus in Perspective) -->
+    <path d="M 250,55 L 435,120 L 250,175 L 65,120 Z" fill="url(#goldCapGrad)" stroke="#6A4914" stroke-width="2" stroke-linejoin="round"/>
+    
+    <!-- Skull Cap Underside Arch -->
+    <path d="M 145,148 Q 250,195 355,148 L 355,188 Q 250,238 145,188 Z" fill="#9A6B22" stroke="#5A3E10" stroke-width="1.5"/>
+    <path d="M 145,152 Q 250,198 355,152 L 355,178 Q 250,226 145,178 Z" fill="url(#goldCapGrad)"/>
+    
+    <!-- Button on Top Center -->
+    <ellipse cx="250" cy="115" rx="9" ry="6" fill="#F3D59B" stroke="#6A4914" stroke-width="1.5"/>
+    
+    <!-- Tassel Ribbon Dropping to Right -->
+    <path d="M 250,115 C 320,118 385,130 388,195" fill="none" stroke="#D4A359" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M 250,115 C 320,118 385,130 388,195" fill="none" stroke="#F3D59B" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Tassel Ring & Fringe -->
+    <circle cx="388" cy="198" r="4" fill="#9A6B22"/>
+    <path d="M 383,202 L 393,202 L 396,242 L 380,242 Z" fill="url(#goldCapGrad)" stroke="#6A4914" stroke-width="1.5"/>
+    <!-- Tassel Fringe Lines -->
+    <line x1="384" y1="242" x2="384" y2="246" stroke="#9A6B22" stroke-width="1.5"/>
+    <line x1="388" y1="242" x2="388" y2="248" stroke="#F3D59B" stroke-width="1.5"/>
+    <line x1="392" y1="242" x2="392" y2="246" stroke="#9A6B22" stroke-width="1.5"/>
+  </g>
+
+  <!-- Typography: ZAIN ACADEMY -->
+  <text x="250" y="325" 
+        font-family="'Playfair Display', 'Cinzel', 'Trajan Pro', 'Georgia', serif" 
+        font-size="44" 
+        font-weight="800" 
+        letter-spacing="5" 
+        text-anchor="middle" 
+        fill="currentColor">
+    ZAIN ACADEMY
+  </text>
+
+  <!-- Subtitle: EST 2010 -->
+  <text x="250" y="372" 
+        font-family="'JetBrains Mono', 'Courier New', monospace" 
+        font-size="19" 
+        font-weight="600" 
+        letter-spacing="14" 
+        text-anchor="middle" 
+        fill="#D4A359">
+    EST 2010
+  </text>
+  
+  <!-- Subtle Ledger Line -->
+  <line x1="100" y1="395" x2="400" y2="395" stroke="#D4A359" stroke-width="1" stroke-dasharray="6 4" opacity="0.6"/>
+</svg>
