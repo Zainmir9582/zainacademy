@@ -1,5 +1,6 @@
 import React from "react";
 import { HashRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 
 // Component imports
 import Navbar from "./components/Navbar";
@@ -58,6 +59,7 @@ export default function App() {
           <Route path="*" element={<Home />} />
         </Routes>
       </ClientLayout>
+      <Analytics />
     </Router>
   );
 }
